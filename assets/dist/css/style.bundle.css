@@ -142,7 +142,7 @@ input[type=text], input[type=password] {
 .auth-picture {
   background-image: url(../../images/index-picture.jpg);
   background-position: center;
-  -webkit-filter: blur(5px);
+  -webkit-filter: blur(3px);
   background-size: cover;
   height: 100%; }
 
