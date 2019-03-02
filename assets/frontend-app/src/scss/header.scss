@@ -1,0 +1,18 @@
+.header {
+    background-color: $white;
+    max-height: 60px;
+    padding: 20px 0;
+    color: $white;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    .menu-logotip {
+        position: absolute;
+        top: -8px;
+        img {
+            height: 35px;
+            width: 35px;
+        }
+    }
+}

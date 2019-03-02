@@ -1,0 +1,51 @@
+.page-wrapper {
+    overflow-x: hidden;
+    font-size: 14px;
+    height: 100%;
+    .container-fluid {
+        position: relative;
+        max-width: 1230px;
+    }
+    .site-body {
+        height: 100%;
+        &.top-indent {
+            padding-top: 60px;
+        }
+        .first-screen {
+            background: url(../../images/index-picture.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            .screen-text {
+                text-transform: uppercase;
+                position: relative;
+                text-align: center;
+                color: #000000;
+                top: 60px;
+                .large-bg {
+                    font-family: LatoBlack;
+                    color: #e9e9e9;
+                    font-size: 220px;
+                }
+                .medium {
+                    font-family: LatoThin;
+                    padding-right: 15px;
+                    position: absolute;
+                    font-size: 160px;
+                    line-height: 1.2;
+                    width: 100%;
+                    top: 0;
+                    z-index: 2;
+                }
+                .small {
+                    font-family: LatoLight;
+                    padding-right: 15px;
+                    position: absolute;
+                    font-size: 30px;
+                    width: 100%;
+                    top: 180px;
+                }
+            } /** .screen-text */
+        } /** .first-screen */
+    } /** .site-body */
+} /** .page-wrapper */
