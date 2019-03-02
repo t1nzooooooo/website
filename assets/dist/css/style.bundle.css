@@ -62,12 +62,12 @@ input[type=text], input[type=password] {
     border: 1px solid #ffffff;
     outline: none;
     opacity: 0.9; }
-  input[type=text].t-indent, input[type=password].t-indent {
+  input[type=text].m-top, input[type=password].m-top {
     margin: 10px 0 0 0; }
 
 ::-webkit-input-placeholder {
   color: #ffffff;
-  opacity: 0.6; }
+  opacity: 0.8; }
 
 /** Bootstrap. */
 .pull-left {
@@ -75,6 +75,60 @@ input[type=text], input[type=password] {
 
 .pull-right {
   float: right; }
+
+.auth-picture {
+  background-image: url(../../images/index-picture.jpg);
+  background-position: center;
+  -webkit-filter: blur(2px);
+  background-size: cover;
+  height: 100%; }
+
+.auth-mask {
+  transition: opacity .5s ease;
+  background-color: #000000;
+  position: fixed;
+  z-index: 9998;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: table; }
+  .auth-mask .auth-wrapper {
+    vertical-align: middle;
+    display: table-cell; }
+    .auth-mask .auth-wrapper .auth-content {
+      position: relative;
+      margin: 0 auto;
+      max-width: 90%;
+      padding: 15px;
+      width: 100%; }
+      .auth-mask .auth-wrapper .auth-content.biggest {
+        max-width: 580px; }
+      .auth-mask .auth-wrapper .auth-content.large {
+        max-width: 480px; }
+      .auth-mask .auth-wrapper .auth-content.medium {
+        max-width: 380px; }
+      .auth-mask .auth-wrapper .auth-content.small {
+        max-width: 280px; }
+      .auth-mask .auth-wrapper .auth-content .action {
+        margin-top: 10px; }
+        .auth-mask .auth-wrapper .auth-content .action input[type=button] {
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          border: 1px solid #ffffff;
+          background: #ffffff;
+          font-weight: 400;
+          font-size: 16px;
+          height: 35px;
+          padding: 6px;
+          width: 100%;
+          cursor: pointer; }
+          .auth-mask .auth-wrapper .auth-content .action input[type=button]:hover, .auth-mask .auth-wrapper .auth-content .action input[type=button].active {
+            opacity: 0.8; }
+          .auth-mask .auth-wrapper .auth-content .action input[type=button]:focus {
+            outline: none; }
 
 .header {
   background-color: #ffffff;
@@ -139,57 +193,3 @@ input[type=text], input[type=password] {
           top: 180px; }
 
 /** .page-wrapper */
-.auth-picture {
-  background-image: url(../../images/index-picture.jpg);
-  background-position: center;
-  -webkit-filter: blur(3px);
-  background-size: cover;
-  height: 100%; }
-
-.auth-mask {
-  transition: opacity .5s ease;
-  background-color: #000000;
-  position: fixed;
-  z-index: 9998;
-  opacity: 0.3;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  display: table; }
-  .auth-mask .auth-wrapper {
-    vertical-align: middle;
-    display: table-cell; }
-    .auth-mask .auth-wrapper .auth-content {
-      position: relative;
-      margin: 0 auto;
-      max-width: 90%;
-      padding: 15px;
-      width: 100%; }
-      .auth-mask .auth-wrapper .auth-content.biggest {
-        max-width: 580px; }
-      .auth-mask .auth-wrapper .auth-content.large {
-        max-width: 480px; }
-      .auth-mask .auth-wrapper .auth-content.medium {
-        max-width: 380px; }
-      .auth-mask .auth-wrapper .auth-content.small {
-        max-width: 280px; }
-      .auth-mask .auth-wrapper .auth-content .action {
-        margin-top: 10px; }
-        .auth-mask .auth-wrapper .auth-content .action input[type=button] {
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
-          border: 1px solid #ffffff;
-          background: #ffffff;
-          font-weight: 400;
-          font-size: 16px;
-          color: #a18d6c;
-          height: 35px;
-          padding: 6px;
-          width: 100%;
-          cursor: pointer; }
-          .auth-mask .auth-wrapper .auth-content .action input[type=button]:hover, .auth-mask .auth-wrapper .auth-content .action input[type=button].active {
-            opacity: 0.8; }
-          .auth-mask .auth-wrapper .auth-content .action input[type=button]:focus {
-            outline: none; }

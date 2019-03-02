@@ -49,13 +49,13 @@ input[type=text], input[type=password] {
       outline: none;
       opacity: 0.9;
   }
-  &.t-indent {
+  &.m-top {
       margin: 10px 0 0 0;
   }
 }
 ::-webkit-input-placeholder {
     color: $white;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 /** Bootstrap. */
 .pull-left {

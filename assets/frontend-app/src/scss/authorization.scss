@@ -1,7 +1,7 @@
 .auth-picture {
     background-image: url(../../images/index-picture.jpg);
     background-position: center;
-    -webkit-filter: blur(3px);
+    -webkit-filter: blur(2px);
     background-size: cover;
     height: 100%;
 }
@@ -45,7 +45,6 @@
                     background: $white;
                     font-weight: 400;
                     font-size: 16px;
-                    color: $beige;
                     height: 35px;
                     padding: 6px;
                     width: 100%;
