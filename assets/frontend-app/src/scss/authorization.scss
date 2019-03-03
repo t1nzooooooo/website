@@ -1,8 +1,8 @@
 .auth-picture {
     background-image: url(../../images/index-picture.jpg);
     background-position: center;
-    -webkit-filter: blur(2px);
     background-size: cover;
+    filter: blur(2px);
     height: 100%;
 }
 .auth-mask {

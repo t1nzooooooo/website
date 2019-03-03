@@ -29,10 +29,12 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-  ul li.left-indent {
-    margin-left: 30px; }
-  ul li.inline {
+  ul li {
     display: inline-block; }
+    ul li.m-left_large {
+      margin-left: 15px; }
+    ul li.m-left_small {
+      margin-left: 15px; }
 
 a {
   text-transform: uppercase;
@@ -78,8 +80,8 @@ input[type=text], input[type=password] {
 .auth-picture {
   background-image: url(../../images/index-picture.jpg);
   background-position: center;
-  -webkit-filter: blur(2px);
   background-size: cover;
+  filter: blur(2px);
   height: 100%; }
 
 .auth-mask {
@@ -144,6 +146,18 @@ input[type=text], input[type=password] {
     .header .menu-logotip img {
       height: 35px;
       width: 35px; }
+
+.footer {
+  background-color: #ffffff;
+  font-family: LatoLight;
+  max-height: 30px;
+  padding: 5px 0;
+  color: #000000;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  position: fixed; }
 
 .page-wrapper {
   overflow-x: hidden;
