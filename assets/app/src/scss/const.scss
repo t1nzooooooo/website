@@ -1,0 +1,22 @@
+/*
+ * Bootstrap 4 grid tiers and media query breakpoints.
+ * lg = large ≥ 992px. Max container width 960px.
+ * md = middle ≥ 768px. Max container width 720px.
+ * sm = small ≥ 576px. Max container width 540px.
+ * Use @media (max-width: $constant) { options }.
+ */
+ $lg: 992px; // lg = large.
+ $md: 768px; // md = middle.
+ $sm: 576px; // sm = small.
+ $bm: 425px; // bm = biggest.
+ $mb: 320px; // mb = mobile.
+ /** End media query breakpoints. */
+
+/*
+ * The colors that are used on the pages.
+ * Use together # name $. color: $orange;
+ * color: $orange;
+ */
+$white: #FFFFFF;
+$black: #1F1A17;
+/** End colors. */

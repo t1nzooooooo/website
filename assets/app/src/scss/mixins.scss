@@ -1,0 +1,77 @@
+/** ... */
+@mixin img($img: '', $pos_x: center, $pos_y: center, $size: cover) {
+    background-image: url($img);
+    background-position-x: $pos_x;
+    background-position-y: $pos_y;
+    background-repeat: no-repeat;
+    background-size: $size;
+}
+/** End img. */
+
+/*
+ * The following styles are for rounding.
+ * @include border_radiuses($bottomright: 10px, $bottomleft: 30px);
+ */
+ @mixin border_radius($radius: 0) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius:    $radius;
+    border-radius:         $radius;
+
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
+}
+/** End border_radius. */
+
+/**
+* Mixin for styling page scrolling(included once).
+* Used in the root style file. @include document_scroll();
+*/
+@mixin document_scroll($color: $black) {
+    ::-webkit-scrollbar-track-piece {
+        background-color: $white;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: $white;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: $gray;
+    }
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+    }
+}
+/** End document_scroll. */
+
+/**
+* This is a mixin for styling a placeholder in an input element(included once).
+* Used in the root style file. @include input_placeholder();
+*/
+@mixin input_placeholder($color: $black) {
+    ::-webkit-input-placeholder { /** Chrome/Opera/Safari. */
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $color;
+        opacity: 0.5;
+    }
+    :-ms-input-placeholder { /** IE 10+. */
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $color;
+        opacity: 0.5;
+    }
+    ::-moz-placeholder { /** Firefox 19+. */
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $color;
+        opacity: 0.5;
+    }
+    :-moz-placeholder { /** Firefox 18-. */
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $color;
+        opacity: 0.5;
+    }
+}
+/** End input_placeholder. */

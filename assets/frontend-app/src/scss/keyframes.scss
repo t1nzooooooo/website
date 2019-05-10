@@ -1,6 +1,0 @@
-/** border-radius($1px) border-radius($1%) */
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
-}
