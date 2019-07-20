@@ -1,3 +1,6 @@
 # Distribution / packaging
 distributions/
 node_modules/
+
+# Files
+package-lock.json
