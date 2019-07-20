@@ -1,0 +1,101 @@
+@import './constants';
+@import './mixins';
+
+
+html, body {height: 100%; padding: 0; margin: 0;}
+input[type=text], [type=password] {
+    @include border-radius(3px);
+    border: 1px solid $white;
+    background: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+    height: 40px;
+    width: 100%;
+    padding: 4px;
+    opacity: 0.6;
+    &:focus {
+        border: 1px solid $white;
+        outline: none;
+        opacity: 1;
+    }
+}
+button {
+    @include border_radius(3px);
+    background-color: $white;
+    border: 1px solid $white;
+    font-size: 16px;
+    height: 35px;
+    width: 100%;
+    opacity: 0.8;
+    &:hover, &.active {
+        opacity: 1;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.auth_pic {
+    @include img(
+        $pos_x: center,
+        $pos_y: center,
+        $size: cover
+    );
+    filter: blur(2px);
+    height: 100%;
+}
+.auth_mask {
+    transition: opacity .5s ease;
+    background-color: $black;
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+    z-index: 9998;
+    .auth_wrapper {
+        vertical-align: middle;
+        display: table-cell;
+        .auth_container {
+            position: relative;
+            max-height: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+            &.biggest {
+                max-width: 414px;
+            }
+            &.medium {
+                max-width: 375px;
+            }
+            &.small {
+                max-width: 290px;
+            }
+            .field {
+                margin-bottom: 10px;
+            }
+            .action {
+                margin-top: 10px;
+                input[type=button] {
+                    @include border-radius(3px);
+                    border: 1px solid $white;
+                    background-color: $white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    height: 35px;
+                    width: 100%;
+                    padding: 6px;
+                    cursor: pointer;
+                    &:hover, &.active {
+                        opacity: 0.8;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
