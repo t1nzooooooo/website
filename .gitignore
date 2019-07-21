@@ -1,6 +1,5 @@
 # Distribution / packaging
-distributions/
-node_modules/
+/assets/javascript/application/distributions/
+/assets/javascript/application/node_modules/
 
 # Files
-.package-lock.json
