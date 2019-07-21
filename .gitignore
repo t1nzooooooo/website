@@ -3,4 +3,4 @@ distributions/
 node_modules/
 
 # Files
-package-lock.json
+.package-lock.json
