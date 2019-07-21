@@ -1,5 +1,3 @@
 # Distribution / packaging
-/assets/javascript/application/distributions/
-/assets/javascript/application/node_modules/
-
-# Files
+assets/javascript/application/distributions/
+assets/javascript/application/node_modules/
