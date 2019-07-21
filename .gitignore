@@ -2,4 +2,4 @@
 assets/javascript/application/distributions/
 assets/javascript/application/node_modules/
 
-package-lock.json
+assets/javascript/application/package-lock.json
